@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.glut.manager.mapper.StudentMapper">
+
+    <resultMap id="BaseResultMap" type="com.glut.manager.domain.StudentDTO">
+        <id property="stuXh" column="stu_xh" jdbcType="VARCHAR"/>
+        <result property="stuMz" column="stu_mz" jdbcType="INTEGER"/>
+        <result property="stuXb" column="stu_xb" jdbcType="VARCHAR"/>
+        <result property="stuZh" column="stu_zh" jdbcType="VARCHAR"/>
+        <result property="stuMm" column="stu_mm" jdbcType="VARCHAR"/>
+        <result property="stuSfz" column="stu_sfz" jdbcType="VARCHAR"/>
+        <result property="stuYe" column="stu_ye" jdbcType="DOUBLE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        stu_xh,stu_mz,stu_xb,stu_zh,stu_mm,stu_mm,stu_sfz,stu_ye
+    </sql>
+
+</mapper>
