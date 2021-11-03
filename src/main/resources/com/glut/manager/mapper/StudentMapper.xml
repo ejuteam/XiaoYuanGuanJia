@@ -16,4 +16,8 @@
         stu_xh,stu_mz,stu_xb,stu_zh,stu_mm,stu_mm,stu_sfz,stu_ye
     </sql>
 
+    <select id="selectUser" resultMap="BaseResultMap" parameterType="string">
+        select <include refid="Base_Column_List"/> from tb_student where stu_zh=#{account} and stu_mm=#{password}
+    </select>
+
 </mapper>
